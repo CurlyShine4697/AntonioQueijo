@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-bootstrap-4/bootstrap-4.css" rel="stylesheet">
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" 
+      type="image/png" 
+      href="img/ico.png" />
+    <title>Antonio do Queijo</title>
+</head>
+<body>
+    <header id="hed">
+        <img id="logo" src="img/logo.png" alt="">
+        <div id="hambu">
+            <div id="himg">
+                <img  src="img/hamb.png" onclick="menu()">
+            </div>    
+            <li id="list">
+                <ul>
+                    <a class="cor font-26" href="#hed">
+                        Home
+                    </a>
+                </ul>
+                <ul>
+                    <a class="cor font-26" href="#hist">Quem Somos</a>
+                </ul>
+                <ul>
+                    <a id="produtos1" class="cor font-26" href="#cata">Produtos</a>
+                </ul>
+                <ul>
+                    <select class="form-select cor font-26" id="cat2" onchange="catalogo()">
+                        <option >Catogorias</option>
+                        <option value="1">Queijos</option>
+                        <option value="2">Vinhos</option>
+                        <option value="3">Doces</option>
+                        <option value="4">Outros</option>
+                    </select>
+                </ul>
+                <ul>
+                    <a class="cor font-26" href="#fot">Contato</a>
+                </ul>
+            </li>       
+        </div>      
+        <li id="list2">
+            <ul>
+                <a class="cor font-26" href="#hed">
+                    Home
+                </a>
+            </ul>
+            <ul>
+                <a class="cor font-26" href="#hist">Quem Somos</a>
+            </ul>
+            <ul>
+                <a id="produtos" class="cor font-26" href="#cata">Produtos</a>
+            </ul>
+            <ul>
+                <select class="form-select cor font-26" id="cat" onchange="catalogo()">
+                    <option>Catogorias</option>
+                    <option value="1">Queijos</option>
+                    <option value="2">Vinhos</option>
+                    <option value="3">Doces</option>
+                    <option value="4">Outros</option>
+                </select>
+            </ul>
+            <ul>
+                <a class="cor font-26" href="#fot">Contato</a>
+            </ul>
+        </li>
+    </header> 
+    <section  id="home">
+       <div id="sli" class="w3-content w3-section">
+        <img class="mySlides" src="img/ququ.jpg">
+        <img class="mySlides" src="img/vinhos.jpg">
+        <img class="mySlides" src="img/doces.jpg">
+      </div>
+       <!--<img src="img/ququ.jpg" alt="">-->
+    </section>
+    <section id="hist">
+        <h1>Um pouco da nossa História</h1>
+        <div id="desc">
+            <div class="divs d1">
+                <p>Me chamo Antônio,  nasci em 28 de abril de 1966, sou natural da Paraíba mas cresci no Rio de Janeiro.<br>
+
+                    Há doze anos voltei de uma viagem à Espanha, em busca de oferecer uma vida melhor aos meus filhos e esposa, passei 1 ano em terras  longínquas. <br>
+                    
+                    Cheguei ao Brasil sem quaisquer expectativas de trabalho, pois não sou o homem que sentou nas cadeiras de  uma universidade.<br>
+                    
+                    Não tinha expectivas de um labor - no entanto sempre tive garra e determinação.<br>
+                    
+                     Em uma noite típica, sonhei com uma prateleira e um queijo em cima dela, não sei o que foi aquilo - mas aquele sonho me deu uma luz no fim do túnel , dali em diante passei a trabalhar com queijos.<br>
+                    
+                    Hoje nossa empresa é familiar, valorizamos os pequenos produtores do nosso país, trabalhamos com 70% de produtos artesanais e 100% de produtos nacionais. <br>
+                    
+                    Passei por diversos países e sempre senti saudade do sabor de " casa" - é por isso  que levamos aos lares aquele gostinho de interior, café quentinho, queijo e uma família em volta da mesa.<br>
+                    
+                    Nosso objetivo é levar mais que um produto, é unir pessoas , criar memórias, cheiro e gosto dos bons momentos - de modo que se você sair de seu país lembrar-se-á sempre do gostinho e cheirinho do seu lar.</p>
+            </div>
+            <div class="divs d2">
+                <img src="img/vendedor.jpg">
+            </div>
+        </div>
+    </section>
+    <section id="cata">
+        <h1>Produtos</h1>
+        <div id="GG">
+            <img id="fechar" src="img/delete.png" onclick="fechar()">
+            <img  id="volt" src="img/volt.png" onclick="voltar(0,2)">
+            <div id="GGsub">
+                <img id="Gimg" src="" >
+                <p id="Gpar" ></p>
+            </div>           
+            <img  id="go" src="img/go.png" onclick="ir(0,2)">   
+        </div>
+        <div id="queijos" class="prods">
+            <img class="voltar" src="img/voltar.png" onclick="voltar(0,0)">
+            <div id="q1" class="im">
+                <img id="Qj1" class="qimg" src="img/queijos/meiaCura.png" onclick="catalogo(0,0)">
+                <p id="p1" class="qpar" >Queijo Meia Cura - <strong>28,00 R$</strong> <br>
+                   Direto de Minas Gerais.
+                </p>
+            </div>
+            <div id="q2" class="im">
+                <img id="Qj2" class="qimg" src="img/queijos/provolone.png" onclick="catalogo(0,1)">
+                <p id="p2" class="qpar" >Queijo Provolone - <strong>30,00 R$</strong> <br>
+                    Direto de Minas Gerais.
+                 </p>
+            </div>
+            <div id="q3" class="im">
+                <img id="Qj3" class="qimg" src="img/queijos/queijo-serra.png" onclick="catalogo(0,2)">
+                <p id="p3" class="qpar">Queijo da Serra - <strong>35,00 R$</strong> <br>
+                    Direto da Serra Mineira.
+                 </p>
+            </div>
+            <img  class="ir" src="img/ir.png" onclick="ir(0,1)">
+        </div>
+        <div id="vinhos" class="prods">
+            <img class="voltar" src="img/voltar.png" onclick="voltar(1,0)">
+            <div id="vn1" class="im">
+                <img id="vi1" class="vimg" src="img/vinhos/martin.png" onclick="catalogo(1,0)">
+                <p id="v1" class="vpar" >Vinho San Martin - <strong>13,00 R$</strong> <br>
+                    Direto do Rio Grande do Sul.<br>
+                    Tipos: Tinto Suave, Tinto sauve bordô e Tinto|Branco seco
+                 </p>
+            </div>
+            <div id="vn2" class="im">
+                <img id="vi2" class="vimg" src="img/vinhos/pergola.png" onclick="catalogo(1,1)">
+                <p id="v2" class="vpar">Vinho Pérgola - <strong>22,00 R$</strong> <br>
+                    Direto do Rio Grande do Sul.<br>
+                    Tipos: Tinto Suave e Tinto seco.
+                 </p>
+            </div>
+            <div id="vn3" class="im">
+                <img id="vi3"class="vimg" src="img/vinhos/germain.png" onclick="catalogo(1,2)">
+                <p id="v3" class="vpar">Vinho San Germain - <strong>25,00 R$</strong> <br>
+                    Direto da Serra Gaucha.<br>
+                    Tipos: Tinto Suave, Tinto Meio Seco e Tinto seco.
+                 </p>
+            </div>
+            <img class="ir" src="img/ir.png" onclick="ir(1,1)">
+        </div>
+        <div id="doces" class="prods">
+            <img class="voltar" src="img/voltar.png" onclick="voltar(2,0)">
+            <div id="dcs1" class="im">
+                <img id="dc1" class="pimg" src="img/doces/amantegados.png" onclick="catalogo(2,0)">
+                <p id="d1" class="ppar" >Bicoitos Amanteigados - <strong>15,00 R$</strong> <br>
+                    Direto de Minas Gerais. <br>
+                    Tipos: Tradicional, Goiabada, Chocolate e Doce de Leite. 
+                 </p>
+            </div>
+            <div id="dcs2" class="im">
+                <img id="dc2" class="pimg" src="img/doces/dleite1.png" onclick="catalogo(2,1)">
+                <p id="d2"  class="ppar">Doce de Leite Puro- <strong>12,00 R$</strong> <br>
+                    Direto de Minas Gerais.
+                    <!--Tipos: Tradicional, Goiabada, Chocolate, Morango, outros... Ameixa, Coco Queimado, Brigadeiro, Abacaxi e Maracuja.-->
+                 </p>
+            </div>
+            <div id="dcs3" class="im">
+                <img id="dc3" class="pimg" src="img/doces/Ambrosia1.png" onclick="catalogo(2,2)">
+                <p id="d3" class="ppar">Ambrosia - <strong>12,00 R$</strong> <br>
+                    Direto de Minas Gerais.
+                 </p>
+            </div>
+            <img class="ir" src="img/ir.png" onclick="voltar(2,0)">
+        </div>
+        <div id="outros" class="prods">
+            <img class="voltar" src="img/voltar.png" onclick="voltar(3,0)" >   
+            <div id="otr1" class="im">
+                <img id="ot1" class="oimg" src="img/outros/mel.png" onclick="catalogo(3,0)">
+                <p id="o1" class="opar">Mel da Roça - <strong>20,00 R$</strong> <br>
+                    Direto de Minas Gerais.
+                    Tipos: Flores Silvestre e Flores de Laranjeiras.
+                 </p>
+            </div>
+            <div id="otr2" class="im">
+                <img id="ot2" class="oimg" src="img/outros/manPura1.png" onclick="catalogo(3,1)">
+                <p id="o2" class="opar">Manteiga Pura - <strong>12,00 R$</strong> <br>
+                    Direto de Minas Gerais.
+                 </p>
+            </div>
+            <div id="otr3" class="im">
+                <img id="ot3" class="oimg" src="img/outros/manGarrafa1.png" onclick="catalogo(3,2)">
+                <p id="o3" class="opar">Manteiga de Garrafa - <strong>18,00 R$</strong> <br>
+                    Direto de Minas Gerais.<br>
+                 </p>
+            </div>
+            <img class="ir" src="img/ir.png" onclick="ir(3,0)">
+        </div>
+    </section>
+    <footer id="fot">
+        <div id="contato">
+            <p> Contato:  (11) xxxxx-xxxx   -  xxxx-xxxx
+               <br>
+               Email: antoniodoqueijo@gmail.com.br
+            </p>
+        </div>
+        <div id="logo-end">
+            <img src="img/logo2.png" >
+        </div>
+        <div id="redes">
+            <a href="#"><img src="img/face.png" alt=""></a>
+            <a href="#"><img src="img/insta.png" alt=""></a>
+            <a href="#"><img src="img/whats.png" alt=""></a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

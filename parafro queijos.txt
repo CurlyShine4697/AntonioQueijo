@@ -1,0 +1,39 @@
+
+<!--  <div class="prods">
+            <div class="im">
+                <img src="img/trançado.png">
+                <p>Queijo trançado - <strong>25,00 R$</strong> <br>
+                    Direto de Minas Gerais.<br>
+                    Sabores: Tradicional, Pimenta, Temperado e Alho.
+                 </p>
+            </div>
+            <div class="im">
+                <img src="img/frescal.png">
+                <p>Queijo Fresco - <strong>28,00 R$</strong> <br>
+                    Direto de Minas Gerais.
+                 </p>
+            </div>
+            <div class="im">
+                <img src="img/coalho.png">
+                <p>Queijo Coalho - <strong>35,00 R$</strong> <br>
+                    Direto de Minas Gerais.
+                 </p>
+            </div>
+        </div>
+        <div class="prods">
+            <div class="im">
+                <img src="img/canastra.png">
+                <p>Queijo Canastra - <strong>28,00 R$</strong> <br> Direto da Serra da Canastra.
+                 </p>
+            </div>
+            <div class="im">
+                <img src="img/brie.png">
+                <p>Queijo Brie - <strong>30,00 R$</strong> <br> Direto de Minas Gerais.
+                 </p>
+            </div>
+            <div class="im">
+                <img src="img/reino.png">
+                <p>Queijo do Reino - <strong>35,00 R$</strong> <br> Direto de Minas Gerais.
+                 </p>
+            </div>
+        </div>-->
