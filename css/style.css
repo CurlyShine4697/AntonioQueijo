@@ -294,6 +294,9 @@ footer img {
 }
 
 @media screen and (max-width: 450px){
+    #wht {
+        margin-top: 140%;
+    }
     #home {
         width: 100%;
         height: 350px;
