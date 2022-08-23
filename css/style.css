@@ -7,125 +7,61 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 4144px;
-}
-
-header {
-    width: 100%;
-    height: 2%;
-    border-bottom: solid #800000 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#list{
-    display: none;
-    position: absolute;
-    width: 48%;
-    margin-top: 15%;
-    text-align: end;
-    left: 0;
-    flex-direction: column;
-}
-
-#list a{
-    color: #fff;
-}
-
-#list2 {
-    display: flex;
-    width: 60%;  
-    align-items: center;    
-    list-style: none;
-}
-
-#list2 ul {
-    width: auto;
-    margin-left: 4%;
-}
-
-#hambu{
-    display: none;
-    position: absolute;
-    flex-direction: column;
-    align-items: flex-end;
-    background-color: rgba(128,0,0,1);
-}
-
-#himg{
-    position: absolute;
-    top: 0;
-    height: 50px;
-}
-
-.humbcor {
-    color: #fff;
-}
-
-.font-26 {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.cor {
-    color: #800000;
-}
-
-header li ul a {
-    text-decoration:none;;
-}
-
-#logo {   
-    margin-top: 12%;
-    border:solid #800000 3px;
-    width: 200px;
-    height: 200px;
-    z-index: 1000;
 }
 
 #home {
     width: 100%;
-    height: 17%;
+    height: 700px;
+}
+
+#logo {
+    z-index: 99999999;
+    position: absolute;
 }
 
 #sli{
+    position: relative;
     width: 100%;
     height: 100%;
 }
 
-.mySlides {display:none;
+.mySlides {
+    display:none;
     width: 100%;
     height: 100%;
 }
 
-/*
-#home img  {
+#wht{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    z-index: 99999999;
+    margin-left: 92%;
+    margin-top: 40%;
+}
+
+#wht img{
     width: 100%;
     height: 100%;
-    opacity: 0.85;
-}*/
+}
 
 #hist {
     width: 100%;
-    height: 20%;
     text-align: center;
 }
 
 #hist h1 {
     margin-top: 5%;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 #desc {
-    width: 100%;
-    height: 70%;
     display: flex;
+    width: 100%;
     align-items: center;
 }
 
 .divs {
-    height: 100%;
     margin-top: 5%;
 }
 
@@ -149,492 +85,220 @@ header li ul a {
     height: 100%;
 }
 
-#cata {  
+.btn-1{
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.btn a {
+    margin-bottom: 5%;
+}
+
+.btn a img{
     width: 100%;
-    height: 56%;
+    height: 100%;
+}
+
+#cata {  
+    margin-top: 10%;
+    width: 100%;
     text-align: center;         
     display: flex;        
     flex-direction: column;     
 }
 
 #cata h1 {
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 8%;
 }
 
-#GG{
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.75);
-    z-index: 9999999;
-}
-
-#GGsub {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    height: 80%;
-}
-
-#fechar{
-    position: absolute;
-    margin-left: 80%;
-    margin-top: -43%;
-}
-
-#Gimg{
-    width: 100%;
-    height: 90%;
-}
-
-#Gpar{
-    width: 100%;
-    height: 10%;
-    color: #fff;
-    font-size: 22px;
-    font-weight: bold;
-    text-align: left;
-}
-
-#Gpar strong {
-    color: #fff;
-    font-weight: bold;
-}
-
-#volt, #go {
-    display: none;
-    width: 8%;
-    height: 15%;
-}
-
 .prods {
-    display: flex;
-    width: 90%;
+    width: 100%;
     height: 25%;
-    margin-left: 5%;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#q1, #q2, #q3, #vn1, #vn2, #vn3, #dcs1, #dcs2, #dcs3, #otr1, #otr2, #otr3 {
-    display: flex;
+    margin-top: 3%;
 }
 
 .im{ 
-    width: 23%;
-    height: 80%;
+    margin: 3%;
     flex-direction: column;
 }
 
-.im img {
-    width: 100%;
-    height: 75%;
-}
-
-.im img:hover {
-    width: 110%;
-    height: 85%;
-}
-
-.im p {
-    width: 100%;
-    height: 40%;
-    margin-top: 0.5%;
-    text-align: left;
-    font-size: 20px;
-}
-
-.ir, .voltar {
-    width: 5%;
-    height: 10%;
-}
-
-.ir:hover,.voltar:hover{
-    width: 7%;
-    height: 15%;
-}
 
 footer {
-    background-image: url("../img/queijin2.png");
-    display: flex;
     width: 100%;
-    /*height: 3.5%;*/
+    height: 350px;
+    margin-top: 10%;
+    background-image: url("../img/footer.png");
+    display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-#contato {
-    width: 30%;
-    height: 60%;
-    z-index: 1500;
-}
-
-#contato p {
-    font-size: 26px;
+footer p {
     color: #fff;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: bolder;
+}
+footer img {
+    display: block;
 }
 
-#redes {
+.copy{
+    font-size: 20px;
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5%;
-    margin-left: 88%;
+    align-self: flex-end;
+    
 }
-
-#redes a{
-    margin-left: 10%;
-}
-
-#logo-end {
-    width: 10%;
-    height: 80%;
-    z-index: 1500;
-}
-
-#logo-end img {
-    width: 100%;
-    height: 100%;
-}
-
-@media screen and (max-width: 1220px){
-    #list2 {
-        width: 65%;
+@media screen and (max-width: 1200px){
+    #wht {
+        margin-left: 90%;
+        margin-top: 45%;
     }
-    #list2 a{
-        font-size: 18px;
-    }
-    #hambu{
-        display: none;
-    }
-
-    #list2 select{
-        font-size: 18px;
-    }
-    #logo{
-        margin-top: 13%;
-    }
-    #hist p {
-        font-size: 20px;
-    }
-    #cata{
-        margin-top: 5%;
-    }
-    footer{
-        height: 5%;
-        margin-top: 3%;
-    }
-    #contato{
-        margin-top: 3%;
-        width: 60%;
-    }
-    #logo-end {
-        width: 15%;
-        margin-right: 10%;
-    }
-    #redes{
-        margin-top: 12%;
+    footer p {
+        font-size: 28px;
     }
 }
 
 @media screen and (max-width: 1024px){
-    body{
-        height: 3300px;
+    #logo {
+        width: 250px;
     }
-    #logo{
-        width: 150px;
-        height: 150px;
+    #home {
+        height: 580px;
     }
-    #list2 a{
-        font-size: 16px;
+    #wht {
+        width: 70px;
+        height: 70px;
+        margin-left: 87%;
+        margin-top: 55%;
     }
-    #list2 select{
-        font-size: 16px;
-    }
-    #home{
-        height: 16%;
-    }
-    #hist p {
-        font-size: 20px;
+    #desc {
+        flex-direction: column;
     }
     .d1 {
-        width: 56%;
+        width: 70%;
+        font-size: 20px;
     }
-    .d2 {
-        width: 31%;
-        margin-top: 10%;
-    }
-    #cata{
+    .btn-1{
         margin-top: 8%;
     }
-    .prods{
-        width: 95%;
-        margin-left: 2.5%;
-    }
-    .im {
-        width: 28%;
-    }
-    .im img:hover{
-        width: 103%;
-    }
-    footer{
-        margin-top: 8%;
-    }
-    #contato{
-        width: 50%;
-    }
-    #logo-end {
-        width: 14%;
-        height: 83%;
+    
+    footer p {
+        font-size: 24px;
     }
 }
 
 @media screen and (max-width: 900px){
-    #list2 {
-        width: 75%;
+    #logo {
+        width: 200px;
     }
-    #cata{
-        height: 50%;
-        margin-top: 30%;
+    #wht {
+        width: 65px;
+        height: 65px;
+        margin-left: 90%;
+        margin-top: 63%;
+    }
+    .d1 p {
+        font-size: 20px;
+    }
+    .btn-1, .btn-2{
+        width: 438px;
+        height: 65px;
+    }
+
+    .btn a {
+        width: 200px;
+        height: 50px;
+    }
+    footer img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #wht {
+        width: 60px;
+        height: 60px;
+        margin-left: 90%;
+        margin-top: 73%;
+    }
+    footer p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #home {
+        height: 550px;
+    }
+    #wht {
+        margin-left: 90%;
+        margin-top: 81%;
     }
     .d2 {
-        margin-top: 17%;
-    }
-    footer{
-        margin-top: 10%;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    body{
-        height:3500px;
-    }
-    header{
-        height: 60px;
-    }
-    #logo{
-        margin-right: 60%;
-        margin-top: 15%;
-    } 
-    #hambu{
-        display: block;
-        width: 11%;
-        height: 55px;
-        margin-left: 94%;
-    }
-    #home{
-        height: 350px;
-    }
-    #himg{
-        left: 8%;
-    }
-    #list2 {
-        display: none;
-    }
-    #desc{
-        width: 90%;
-        margin-left: 5%;
-        flex-direction: column;
-    }
-    #hist{
-        height: 1150px;
-    }
-    #hist h1{
-        font-size: 25px;
-    }
-    .divs {
-        width: 100%;
-        margin-left: 0;
-    }
-    .d1 p{
-        font-size: 18px;
-    }
-    .d2{
-        width: 50%;
-        margin-top: 5%;
-    }   
-    #cata h1 {
-        font-size: 40px;
-    }   
-    .prods{
-        width: 90%;
-        height: 22%;
-        margin-left: 5%;
-    }
-
-    .im{
         width: 40%;
     }
-    .im img:hover {
-        width: 105%;
-        height: 80%;
+    .btn-1, .btn-2{
+        width: 380px;
+        height: 60px;
     }
-
-    #GG {
-        height: 75%
+    .btn a {
+        width: 150px;
+        height: 45px;
     }
-    #GGsub {
-        width: 60%;
-        height: 75%;
-        margin-bottom: 10%;
-    }
-    #q3, #vn3, #dcs3, #otr3{
-        display: none;
-    }
-    footer{
-        height: 150px;
-        margin-top: 15%;
-    }
-    #contato {
-        width: 50%;
-        height: 45%;
-    }
-    #contato p {
-        font-size: 20px;
-    }
-    #logo-end {
-        width: 16%;
-        height: 70%;
-    }
-    #redes {
-        margin-top: 15%;
-        margin-left: 22%;
-    }
-
-}
-
-@media screen and (max-width: 700px) {
-    body{
-        height:3800px;
-    }
-    #logo{
-        width: 100px;
-        height: 100px;
-        margin-right: 50%;
-    }    
-    #hambu{
-        display: block;      
-        width: 10%;
-        margin-left: 90%;
-    }
-    #home{
-        height: 300px;
-    }
-    #list2 {
-        display: none;
-    }
-    #desc{
-        width: 90%;
-        margin-left: 5%;
-        flex-direction: column;
-    }
-    #hist{
-        height: 1350px;
-    }
-    #hist h1{
-        font-size: 25px;
-    }
-    .divs {
-        width: 100%;
-        margin-left: 0;
-    }
-    .d1 p{
-        font-size: 18px;
-    }
-    .d2{
-        width: 70%;
-        margin-top: 15%;
-    }
-    #cata h1 {
-        font-size: 45px;
-    }
-    #GG{
-        display: none;
-    }
-    
-    .prods{
-        width: 70%;
-        height: 25%;
-        margin-left: 15%;
-    }
-
-    .im{
-        width: 75%;
-    }
-    .im img:hover {
-        width: 105%;
-        height: 80%;
-    }
-
-    #q2, #q3, #vn2, #vn3, #vn2, #vn3, #dcs2, #dcs3, #otr2, #otr3{
-        display: none;
-    }
-
-    .ir,.voltar{
-        width: 13%;
-        height: 10%;
-    }
-
-    .ir:hover,.voltar:hover{
-        width: 14%;
-        height: 12%;
-    }
-    footer{
-        height: 150px;
-    }
-    #contato {
-        width: 50%;
-        height: 45%;
-    }
-    #contato p {
-        font-size: 20px;
-    }
-    #logo-end {
-        width: 16%;
-        height: 70%;
-    }
-    #redes {
-        margin-top: 15%;
-        margin-left: 22%;
-    }
-}
-
-@media screen and (max-width: 600px){
-    
-    .prods{
-        width: 80%;
-        height: 25%;
-        margin-left: 10%;
-    }
-    footer{
-        height: 100px;
-    }
-    #contato {
-        width: 50%;
-        height: 50%;
-    }
-    #contato p {
+    .copy {
         font-size: 15px;
     }
-    #logo-end {
-        width: 18%;
-        height: 80%;
-        margin-right: -2%;
+}
+
+
+@media screen and (max-width: 600px){
+    #logo {
+        width: 180px;
     }
-    #redes {
-        margin-top: 13%;
-        margin-left: 30%;
+    #home {
+        height: 500px;
+    }
+    d1 p {
+        font-size: 18px;
+    }
+    #wht {
+        width: 55px;
+        height: 55px;
+        margin-left: 87%;
+        margin-top: 96%;
+    }
+    footer img {
+        width: 170px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #home {
+        height: 400px;
+    }
+    #wht {
+        margin-left: 87%;
+        margin-top: 118%;
+    }
+    .btn-1, .btn-2{
+        width: 350px;
+        height: 55px;
     }
 }
 
 @media screen and (max-width: 450px){
-    #hambu{
-        width: 22%;
+    #home {
+        width: 100%;
+        height: 350px;
+    }
+    footer p {
+        font-size: 15px;
     }
 }
