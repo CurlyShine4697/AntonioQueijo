@@ -296,8 +296,8 @@ footer img {
 
 @media screen and (max-width: 450px){
     #wht {
-        margin-left: 80%;
-        margin-top: 175%;
+        margin-left: 78%;
+        margin-top: 177%;
     }
     #home {
         width: 100%;
@@ -305,6 +305,6 @@ footer img {
     }
     footer p {
         font-size: 15px;
-        margin-left: 2%;
+        margin-left: 4%;
     }
 }
